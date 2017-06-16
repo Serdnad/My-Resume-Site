@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+header {
+    background-color: #096CBE;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#div_develop {
+    padding-top: 24px;
+    color: white;
+    text-align: center;
+}
+
+#div_develop img {
+    width: 60%;
+    border-radius: 50%;
+}
+
+#output {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
