@@ -11,10 +11,19 @@ Future main() async {
   var textLook = querySelector("#text_look");
   var textCompletions = ["Developer.", "Musician.", "Student.", "Take a Look...?"];
 
+  for(int i = 0; i < 3; i ++)
+    {
+      textDeveloper.text = "|";
+      await new Future.delayed(const Duration(milliseconds: 200));
+      textDeveloper.text = "";
+      await new Future.delayed(const Duration(milliseconds: 200));
+    }
+
+  await new Future.delayed(const Duration(milliseconds: 500));
 
   for(int i = 0; i < textCompletions.length; i++) {
     for (int j = 0; j <= textCompletions[i].length; j++) {
-      await new Future.delayed(const Duration(milliseconds: 200));
+      await new Future.delayed(const Duration(milliseconds: 150));
       switch(i) {
         case 0: textDeveloper.text = textCompletions[i].substring(0, j); break;
         case 1: textMusician.text = textCompletions[i].substring(0, j); break;
